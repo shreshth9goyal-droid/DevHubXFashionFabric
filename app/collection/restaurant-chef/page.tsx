@@ -11,13 +11,13 @@ import { ImageSlideshow } from "@/components/image-slideshow"
 
 // Restaurant/Bar images array
 const restaurantImages = [
-  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-01.webp", alt: "Restaurant staff uniform 1" },
-  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-02.webp", alt: "Restaurant staff uniform 2" },
-  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-03.webp", alt: "Restaurant staff uniform 3" },
-  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-04.webp", alt: "Restaurant staff uniform 4" },
-  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-05.webp", alt: "Restaurant staff uniform 5" },
-  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-06.webp", alt: "Restaurant staff uniform 6" },
-  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-07.webp", alt: "Restaurant staff uniform 7" },
+  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-01.svg", alt: "Restaurant staff uniform 1" },
+  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-02.svg", alt: "Restaurant staff uniform 2" },
+  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-03.svg", alt: "Restaurant staff uniform 3" },
+  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-04.svg", alt: "Restaurant staff uniform 4" },
+  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-05.svg", alt: "Restaurant staff uniform 5" },
+  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-06.svg", alt: "Restaurant staff uniform 6" },
+  { src: "/images/collection-pateners/collection-right-side-images/Restaurants - Bars/Untitled-4-07.svg", alt: "Restaurant staff uniform 7" },
 ]
 export default function RestaurantChefPage() {
   return (
