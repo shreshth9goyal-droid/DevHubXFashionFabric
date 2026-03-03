@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { AnimateIn } from "@/components/animate-in"
-import Process from "@/app/collection/process/pages"
+import Process from "@/app/collection/process/page"
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
