@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   verification: {
     google: 'rBpCUFyuYtM2_o-dmCz2OJD_18u4l0gpmHV4jmuP0YE',
   },
+  openGraph: {
+    images: ["https://fashionfabric.info/images/bg-imges-hero-sections/image-04.jpg"],
+  },
 }
 
 const clients = [

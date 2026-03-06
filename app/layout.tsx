@@ -29,6 +29,7 @@ const garamond = EB_Garamond({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
+  themeColor: "#00712C",
 }
 
 export const metadata: Metadata = {
@@ -59,6 +60,12 @@ export const metadata: Metadata = {
       { url: "/images/footer-logo.svg" },
     ],
   },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    title: "Fashion Fabric",
+    statusBarStyle: "default",
+  },
   robots: "index, follow",
   openGraph: {
     type: "website",
@@ -69,10 +76,10 @@ export const metadata: Metadata = {
     description: "India's leading bespoke uniform manufacturer specializing in custom uniforms for hospitality, hotels, corporate, and healthcare sectors since 2010.",
     images: [
       {
-        url: "https://fashionfabric.info/images/bg-imges-hero-sections/image-01.jpg",
+        url: "https://fashionfabric.info/images/bg-imges-hero-sections/image-04.jpg",
         width: 1200,
         height: 630,
-        alt: "Fashion Fabric - India's Premier Uniform Supplier",
+        alt: "Fashion Fabric - India's #1 Ranked Uniform Manufacturer",
       },
     ],
   },
@@ -80,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fashion Fabric | #1 Custom Uniform Manufacturer India",
     description: "Premium bespoke uniform manufacturing for luxury hospitality and corporate sectors in India since 2010.",
-    images: ["https://fashionfabric.info/images/bg-imges-hero-sections/image-01.jpg"],
+    images: ["https://fashionfabric.info/images/bg-imges-hero-sections/image-04.jpg"],
   },
 }
 
