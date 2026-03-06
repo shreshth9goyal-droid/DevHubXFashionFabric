@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { useState, useRef } from "react"
 import { AnimateIn, AnimateInStagger } from "@/components/animate-in"
-import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react"
+import { TestimonialsSlider } from "@/components/testimonials-slider"
 
 const clients = [
   { name: "Araqila", logo: "/images/clients/araqila.png" },
@@ -147,111 +147,8 @@ export default function ClientsPage() {
           </div>
         </section>
 
-        {/* Static Tilted Testimonial Section with Background Patterns */}
-        <section className="relative py-32 px-4 bg-[#f8faf8] overflow-hidden min-h-[90vh] flex flex-col justify-center">
-          {/* Enhanced Background Elements */}
-          <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
-            {/* Concentric Circles Pattern */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-[#00712C]/5 rounded-full"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] border border-[#00712C]/3 rounded-full"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] border border-[#00712C]/2 rounded-full"></div>
-            
-            {/* Floating Abstract Shapes */}
-            <div className="absolute top-[10%] right-[10%] w-64 h-64 bg-[#00712C]/5 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-[15%] left-[5%] w-96 h-96 bg-[#00712C]/8 rounded-full blur-3xl opacity-50"></div>
-          </div>
-
-          <div className="container mx-auto max-w-6xl relative z-10">
-            <AnimateIn className="text-center mb-12">
-              <p className="max-w-[850px] text-lg md:text-xl font-medium italic text-neutral-500 mx-auto px-4 leading-relaxed">
-                "At Fashion Fabric, your success is our signature. Read how our bespoke uniform solutions have transformed the identity of leading hospitality brands."
-              </p>
-            </AnimateIn>
-
-            <AnimateIn delay={0.2}>
-              <div className="relative h-[600px] flex items-center justify-center mt-8 perspective-[1500px]">
-                
-                {/* 1. Far Left Card - General Manager */}
-                <div className="absolute hidden lg:flex flex-col items-center justify-center text-center -translate-x-[260px] translate-y-8 rotate-[-12deg] w-[300px] h-[460px] bg-white/80 backdrop-blur-sm text-neutral-400 shadow-xl rounded-[2.5rem] p-8 border border-neutral-100 z-10 scale-90">
-                   <Quote size={28} className="mb-4 text-neutral-200" fill="currentColor" />
-                   <div className="text-[9px] tracking-widest font-bold uppercase py-1 px-4 rounded-full border border-neutral-100 mb-4 text-neutral-400">VERIFIED CLIENT</div>
-                   <h3 className="font-serif font-bold text-xl mb-1 text-neutral-500">General Manager</h3>
-                   <p className="text-[9px] tracking-[0.1em] uppercase mb-4 text-neutral-400">CASINO IN GOA</p>
-                   <p className="text-sm italic leading-relaxed text-neutral-400">"Fashion Fabric's commitment to quality is unmatched. They exceeded our expectations."</p>
-                   <div className="flex gap-1 mt-6 mb-4">
-                     {[...Array(5)].map((_, i) => <Star key={i} size={12} className="text-neutral-200 fill-neutral-200" />)}
-                   </div>
-                   {/* Logo Illustration */}
-                   <div className="relative w-28 h-14 opacity-20">
-                     <Image src="/images/testimonials/Untitled-4_General Manager.svg" alt="Signature" fill className="object-contain object-bottom" />
-                   </div>
-                </div>
-
-                {/* 2. Overlapping Left Card - Operations Director */}
-                <div className="absolute hidden md:flex flex-col items-center justify-center text-center -translate-x-[140px] translate-y-4 rotate-[-6deg] w-[320px] h-[500px] bg-gradient-to-br from-neutral-100 to-white text-neutral-500 shadow-2xl rounded-[2.5rem] p-10 border border-neutral-200 z-20">
-                   <Quote size={32} className="mb-6 text-neutral-200" fill="currentColor" />
-                   <div className="text-[9px] tracking-widest font-bold uppercase py-1 px-4 rounded-full border border-neutral-200 mb-4 text-[#00712C]/60">VERIFIED CLIENT</div>
-                   <h3 className="font-serif font-bold text-2xl mb-1 text-neutral-700">Operations Director</h3>
-                   <p className="text-[9px] tracking-[0.15em] uppercase mb-6 text-neutral-500">BOUTIQUE HOTEL</p>
-                   <p className="text-sm italic leading-relaxed text-neutral-600">"Working with Fashion Fabric has been a pleasure. Their team is responsive and professional."</p>
-                   <div className="flex gap-1 mt-8 mb-4">
-                     {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-[#00712C]/20 fill-[#00712C]/20" />)}
-                   </div>
-                   {/* Logo Illustration */}
-                   <div className="relative w-32 h-16 opacity-30">
-                     <Image src="/images/testimonials/Untitled-4_Operations Director.svg" alt="Signature" fill className="object-contain object-bottom" />
-                   </div>
-                </div>
-
-                {/* 3. Main Center/Right Promo Card - F&B Director (The Green One) */}
-                <div className="relative z-40 flex flex-col items-center justify-between text-center bg-gradient-to-br from-[#00712C] to-[#043d07] text-white shadow-[0_50px_100px_-20px_rgba(0,113,44,0.4)] rounded-[3rem] p-10 md:p-14 w-[350px] sm:w-[400px] md:w-[480px] h-[500px] md:h-[580px] transform hover:scale-[1.02] transition-all duration-700 ease-out border border-[#ffffff10]">
-                  <div className="text-white/20">
-                    <Quote size={56} className="md:w-20 md:h-20" fill="currentColor" />
-                  </div>
-                  
-                  <div className="text-[10px] md:text-xs tracking-[0.2em] font-bold uppercase py-1.5 px-6 rounded-full border border-white/20 text-white/90 my-6">
-                    VERIFIED PARTNER V3
-                  </div>
-
-                  <h3 className="font-serif font-bold text-2xl md:text-3xl mb-1 text-white tracking-tight">F&B Director</h3>
-                  <p className="text-[10px] md:text-xs tracking-[0.3em] uppercase mb-8 md:mb-10 text-white/60">LUXURY RESORT IN GOA</p>
-
-                  <p className="leading-relaxed italic flex-grow text-sm md:text-base font-medium text-white/95 max-w-[90%]">
-                    "The team at Fashion Fabric understands our brand aesthetic perfectly. They've created custom uniforms that our staff love to wear and that represent our brand image."
-                  </p>
-
-                  <div className="flex gap-2 mb-10 md:mb-12 w-full justify-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={22} className="text-yellow-400 fill-yellow-400 drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]" />
-                    ))}
-                  </div>
-
-                  {/* Logo Illustration */}
-                  <div className="relative w-64 h-32 md:w-80 md:h-40 opacity-90 bottom-2">
-                    <Image src="/images/testimonials/Untitled-4_F&B Director.svg" alt="Signature" fill className="object-contain object-bottom" />
-                  </div>
-                </div>
-
-                {/* 4. Overlapping Right Card - Procurement Manager */}
-                <div className="absolute hidden lg:flex flex-col items-center justify-center text-center translate-x-[220px] -translate-y-4 rotate-[8deg] w-[320px] h-[500px] bg-gradient-to-br from-neutral-100 to-white text-neutral-500 shadow-2xl rounded-[2.5rem] p-10 border border-neutral-200 z-30 opacity-90 scale-95 origin-bottom-left">
-                   <Quote size={32} className="mb-6 text-neutral-200" fill="currentColor" />
-                   <div className="text-[9px] tracking-widest font-bold uppercase py-1 px-4 rounded-full border border-neutral-200 mb-4 text-[#00712C]/60">VERIFIED CLIENT</div>
-                   <h3 className="font-serif font-bold text-2xl mb-1 text-neutral-700">Procurement Manager</h3>
-                   <p className="text-[9px] tracking-[0.15em] uppercase mb-6 text-neutral-500">HOTEL CHAIN</p>
-                   <p className="text-sm italic leading-relaxed text-neutral-600">"Consistency and reliability make them our go-to uniform supplier for all properties."</p>
-                   <div className="flex gap-1 mt-8 mb-4">
-                     {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-[#00712C]/20 fill-[#00712C]/20" />)}
-                   </div>
-                   {/* Logo Illustration */}
-                   <div className="relative w-32 h-16 opacity-40">
-                     <Image src="/images/testimonials/Untitled-4_Procurement Manager.svg" alt="Signature" fill className="object-contain object-bottom" />
-                   </div>
-                </div>
-
-              </div>
-            </AnimateIn>
-          </div>
-        </section>
+        {/* Unified Testimonials Section */}
+        <TestimonialsSlider />
       </main>
     </div>
   )
