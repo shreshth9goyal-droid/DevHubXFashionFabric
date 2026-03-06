@@ -80,8 +80,8 @@ export function TiltedTestimonials() {
                 ))}
               </div>
 
-              {/* Logo - Properly Scaled for mobile */}
-              <div className="relative w-full h-24 md:h-52 opacity-100 mb-2">
+              {/* Logo - Hidden on mobile for cleaner view */}
+              <div className="relative hidden md:block w-full h-52 opacity-100 mb-2">
                 <Image src="/images/testimonials/Untitled-4_F&B Director.svg" alt="Signature Logo" fill className="object-contain object-bottom" priority />
               </div>
             </div>

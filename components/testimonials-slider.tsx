@@ -114,7 +114,7 @@ export function TestimonialsSlider() {
                         "{item.quote}"
                     </p>
 
-                    <div className={`relative transition-all duration-700 ${isCenter ? 'w-32 h-20 md:w-40 md:h-24 opacity-100' : 'w-24 h-16 opacity-60'}`}>
+                    <div className={`relative transition-all duration-700 ${isCenter ? 'w-48 h-32 md:w-64 md:h-40 opacity-100' : 'w-32 h-20 opacity-60'}`}>
                       <Image src={item.logo} alt="Client Logo" fill className="object-contain object-bottom" />
                     </div>
                   </div>
