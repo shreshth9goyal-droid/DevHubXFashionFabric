@@ -60,6 +60,12 @@ export const metadata: Metadata = {
       { url: "/images/footer-logo.svg" },
     ],
   },
+  other: {
+    "geo.region": "IN-GA",
+    "geo.placename": "Panaji, Goa",
+    "geo.position": "15.4909;73.8278",
+    "ICBM": "15.4909, 73.8278",
+  },
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -76,10 +82,10 @@ export const metadata: Metadata = {
     description: "India's leading bespoke uniform manufacturer specializing in custom uniforms for hospitality, hotels, corporate, and healthcare sectors since 2010.",
     images: [
       {
-        url: "https://fashionfabric.info/images/bg-imges-hero-sections/image-04.jpg",
+        url: "https://fashionfabric.info/images/bg-imges-hero-sections/image-02.jpg",
         width: 1200,
         height: 630,
-        alt: "Fashion Fabric - India's #1 Ranked Uniform Manufacturer",
+        alt: "Fashion Fabric - #1 Ranked Uniform Manufacturer",
       },
     ],
   },
@@ -87,7 +93,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fashion Fabric | #1 Custom Uniform Manufacturer India",
     description: "Premium bespoke uniform manufacturing for luxury hospitality and corporate sectors in India since 2010.",
-    images: ["https://fashionfabric.info/images/bg-imges-hero-sections/image-04.jpg"],
+    images: ["https://fashionfabric.info/images/bg-imges-hero-sections/image-02.jpg"],
   },
 }
 
@@ -186,6 +192,24 @@ export default function RootLayout({
                     "name": "Fashion Fabric",
                     "url": "https://fashionfabric.info",
                     "description": "Leading manufacturer of bespoke uniforms in India."
+                  },
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://fashionfabric.info"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Uniform Collections",
+                        "item": "https://fashionfabric.info/catalogue"
+                      }
+                    ]
                   }
                 ])
               }}
