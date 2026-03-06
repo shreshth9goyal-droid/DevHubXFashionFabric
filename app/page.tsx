@@ -3,8 +3,8 @@ import { Metadata } from "next"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Fashion Fabric | Custom Uniform Manufacturer in India | Hotels & Corporate",
-  description: "Fashion Fabric is India's leading bespoke uniform manufacturer with 15+ years of excellence. We provide high-quality uniforms for hotels, airlines, healthcare, and corporate teams.",
+  title: "Fashion Fabric (Official Site) | India's #1 Uniform Manufacturer",
+  description: "Official website for Fashion Fabric (fashionfabric.info). India's leading bespoke uniform manufacturer since 2010. High-quality uniforms for hotels, corporate, and healthcare.",
   alternates: {
     canonical: 'https://fashionfabric.info',
   },

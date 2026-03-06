@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
 Sitemap: https://fashionfabric.info/sitemap.xml

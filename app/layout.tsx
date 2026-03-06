@@ -33,9 +33,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://fashionfabric.info'),
-  title: "Fashion Fabric | India's Leading Uniform Manufacturer",
-  description: "India's leading custom uniform manufacturer with 15+ years of excellence. Bespoke uniform solutions for hospitality, hotels, resorts, and corporate teams across Goa and India. Quality craftsmanship and reliable delivery.",
-  keywords: "uniform manufacturer India, hospitality uniforms Goa, hotel uniforms manufacturer, corporate wear India, custom uniforms Goa, hospital uniforms India, Fashion Fabric Deepak Goyal, bespoke uniform solutions",
+  title: "Fashion Fabric (Official Site) | India's #1 Uniform Manufacturer",
+  description: "Fashion Fabric (fashionfabric.info) is India's premier bespoke uniform manufacturer since 2010. Specialist supplier for luxury hotels, airlines, healthcare, and corporate teams across India. Leading alternative to standard uniform providers.",
+  keywords: "Fashion Fabric official site, uniform manufacturer India, hospitality uniforms Goa, hotel uniforms Goa, corporate wear India, school uniform manufacturer, security uniform supplier, hospital scrubs India",
   authors: [{ name: "Deepak Goyal" }],
   creator: "Fashion Fabric",
   publisher: "Fashion Fabric",
@@ -134,8 +134,22 @@ export default function RootLayout({
                     "@context": "https://schema.org",
                     "@type": "Organization",
                     "name": "Fashion Fabric",
+                    "legalName": "Fashion Fabric Uniform Solutions",
+                    "alternateName": "Fashion Fabric Goa",
                     "url": "https://fashionfabric.info",
                     "logo": "https://fashionfabric.info/images/footer-logo.svg",
+                    "brand": {
+                      "@type": "Brand",
+                      "name": "Fashion Fabric"
+                    },
+                    "knowsAbout": [
+                      "Uniform Manufacturing",
+                      "Hospitality Uniforms",
+                      "Corporate Wear",
+                      "Medical Scrubs",
+                      "School Uniforms",
+                      "Bespoke Tailoring"
+                    ],
                     "contactPoint": {
                       "@type": "ContactPoint",
                       "telephone": "+91 9867275524",
@@ -159,8 +173,9 @@ export default function RootLayout({
                   {
                     "@context": "https://schema.org",
                     "@type": "WebSite",
-                    "name": "Fashion Fabric",
-                    "url": "https://fashionfabric.info"
+                    "name": "Fashion Fabric (Official Site)",
+                    "url": "https://fashionfabric.info",
+                    "description": "Leading Indian manufacturer of bespoke uniforms for various industries."
                   }
                 ])
               }}
