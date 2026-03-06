@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+// Page Version: ALL_WHITE_LOCKED_V2
 import { useState, useRef } from "react"
 import { AnimateIn, AnimateInStagger } from "@/components/animate-in"
 import { TiltedTestimonials } from "@/components/tilted-testimonials"
