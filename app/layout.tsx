@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   verification: {
-    google: 'google4e306be66b6ddede', // Using the verification file code
+    google: 'rBpCUFyuYtM2_o-dmCz2OJD_18u4l0gpmHV4jmuP0YE',
   },
   formatDetection: {
     email: false,

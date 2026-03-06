@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: 'https://fashionfabric.info',
   },
   verification: {
-    google: 'google4e306be66b6ddede',
+    google: 'rBpCUFyuYtM2_o-dmCz2OJD_18u4l0gpmHV4jmuP0YE',
   },
 }
 
