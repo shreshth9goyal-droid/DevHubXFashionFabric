@@ -148,11 +148,19 @@ section {
 }
 
 /* FORCED PERFORMANCE: Prevents logo scroll from freezing on hover */
-.animate-marquee {
+.marquee-track-v4 {
+  display: flex !important;
+  flex-direction: row !important;
+  animation: marquee-v4 linear infinite !important;
   animation-play-state: running !important;
 }
 
-/* Ensure no child elements can trigger a pause */
-.animate-marquee:hover {
+@keyframes marquee-v4 {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Hard block any hover effects */
+.marquee-track-v4:hover {
   animation-play-state: running !important;
 }
