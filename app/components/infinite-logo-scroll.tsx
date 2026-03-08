@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 interface Client {
   name: string;
@@ -18,12 +18,11 @@ interface InfiniteLogoScrollProps {
 
 export function InfiniteLogoScroll({ clients, speed = 40, logoSize }: InfiniteLogoScrollProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
-  const [isPaused, setIsPaused] = useState(false)
 
   // Use CSS animation for smooth, GPU-accelerated scrolling
   const animationStyle = {
     animationDuration: `${speed}s`,
-    animationPlayState: isPaused ? 'paused' : 'running',
+    animationPlayState: 'running',
   } as React.CSSProperties
 
   // Default sizes
@@ -40,8 +39,6 @@ export function InfiniteLogoScroll({ clients, speed = 40, logoSize }: InfiniteLo
     <div 
       className="relative flex overflow-hidden py-4 select-none"
       style={{ willChange: 'transform' }}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
       ref={scrollRef}
     >
       {/* First set of logos */}

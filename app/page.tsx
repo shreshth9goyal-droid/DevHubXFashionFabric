@@ -27,11 +27,13 @@ const clients = [
   { name: "Casino Gold", logo: "/images/home-icons-all/clients-home-logos/Casino Gold.png" },
   { name: "Casino Pride", logo: "/images/home-icons-all/clients-home-logos/Casino Pride .png" },
   { name: "Club Mahindra", logo: "/images/home-icons-all/clients-home-logos/Club Mahindra.png" },
+  { name: "Country Inn by Marriott", logo: "/images/clients/jw_marriot_new.png" },
   { name: "Deltin", logo: "/images/home-icons-all/clients-home-logos/deltin.png" },
   { name: "Double Tree", logo: "/images/home-icons-all/clients-home-logos/Double Tree.png" },
   { name: "Elements", logo: "/images/home-icons-all/clients-home-logos/Elements.png" },
   { name: "Fairfield", logo: "/images/home-icons-all/clients-home-logos/Fairfield.png" },
   { name: "Fortune", logo: "/images/home-icons-all/clients-home-logos/Fortune.png" },
+  { name: "Fortune 7 Casino", logo: "/images/clients/fortune_new.png" },
   { name: "Grand Hyatt", logo: "/images/home-icons-all/clients-home-logos/Grand Hyatt.png" },
   { name: "Hard Rock", logo: "/images/home-icons-all/clients-home-logos/Hard Rock.png" },
   { name: "Hilton", logo: "/images/home-icons-all/clients-home-logos/Hilton.png" },
@@ -51,13 +53,11 @@ const clients = [
   { name: "St. Regis", logo: "/images/home-icons-all/clients-home-logos/St. Regis.png" },
   { name: "Strike", logo: "/images/home-icons-all/clients-home-logos/Strike.png" },
   { name: "Taj", logo: "/images/home-icons-all/clients-home-logos/Taj.png" },
+  { name: "Taj Holiday Village", logo: "/images/clients/taj_holiday_village_new.png" },
   { name: "The Astor", logo: "/images/home-icons-all/clients-home-logos/The Astor.png" },
   { name: "The Fern", logo: "/images/home-icons-all/clients-home-logos/The Fern.png" },
   { name: "Vivanta", logo: "/images/home-icons-all/clients-home-logos/Vivanta.png" },
   { name: "W Hotels", logo: "/images/home-icons-all/clients-home-logos/W Hotels.png" },
-  { name: "Taj Holiday Village", logo: "/images/clients/taj_holiday_village_new.png" },
-  { name: "Fortune 7 Casino", logo: "/images/clients/fortune_new.png" },
-  { name: "Country Inn by Marriott", logo: "/images/clients/jw_marriot_new.png" },
 ]
 
 const featuredProducts = [
