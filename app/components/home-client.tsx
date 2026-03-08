@@ -230,7 +230,7 @@ export function HomeClient({ clients, featuredProducts }: HomeClientProps) {
               <h2 className="text-3xl font-bold text-[#00712C] mb-12 pl-6">Trusted By Leading Hospitality Brands</h2>
             </AnimateIn>
             <AnimateIn>
-              <InfiniteLogoScroll clients={clients} speed={60} logoSize={180} />
+              <InfiniteLogoScroll clients={clients} speed={30} logoSize={180} />
             </AnimateIn>
             <AnimateIn delay={0.5}>
               <div className="text-center mt-8">
