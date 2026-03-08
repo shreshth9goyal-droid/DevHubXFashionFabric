@@ -22,7 +22,9 @@ export function InfiniteLogoScroll({ clients, speed = 40, logoSize }: InfiniteLo
   // Use CSS animation for smooth, GPU-accelerated scrolling
   const animationStyle = {
     animationDuration: `${speed}s`,
-    animationPlayState: 'running',
+    animationPlayState: 'running !important',
+    animationIterationCount: 'infinite',
+    animationTimingFunction: 'linear'
   } as React.CSSProperties
 
   // Default sizes
