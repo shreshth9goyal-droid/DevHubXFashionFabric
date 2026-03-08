@@ -146,3 +146,13 @@ img {
 section {
   position: relative;
 }
+
+/* FORCED PERFORMANCE: Prevents logo scroll from freezing on hover */
+.animate-marquee {
+  animation-play-state: running !important;
+}
+
+/* Ensure no child elements can trigger a pause */
+.animate-marquee:hover {
+  animation-play-state: running !important;
+}

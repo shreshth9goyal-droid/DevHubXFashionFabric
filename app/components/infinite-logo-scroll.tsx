@@ -22,7 +22,7 @@ export function InfiniteLogoScroll({ clients, speed = 40, logoSize }: InfiniteLo
   // Use CSS animation for smooth, GPU-accelerated scrolling
   const animationStyle = {
     animationDuration: `${speed}s`,
-    animationPlayState: 'running !important',
+    animationPlayState: 'running',
     animationIterationCount: 'infinite',
     animationTimingFunction: 'linear'
   } as React.CSSProperties
@@ -39,7 +39,7 @@ export function InfiniteLogoScroll({ clients, speed = 40, logoSize }: InfiniteLo
 
   return (
     <div 
-      className="relative flex overflow-hidden py-4 select-none pointer-events-none"
+      className="relative flex overflow-hidden py-4 select-none"
       style={{ 
         willChange: 'transform',
         perspective: '1000px',
