@@ -1,16 +1,18 @@
-"use client"
 import Image from "next/image"
-import { useState, useRef } from "react"
-import { AnimateIn, AnimateInStagger } from "@/components/animate-in"
+import { AnimateIn } from "@/components/animate-in"
 import { TiltedTestimonials } from "@/components/tilted-testimonials"
+import ClientsGrid from "./ClientsGrid"
+import type { Metadata } from "next"
 
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
+export const metadata: Metadata = {
+  title: "V15: Our Prestigious Clients | Fashion Fabric",
+  description: "Trusted by India's biggest brands in hospitality, corporate, and healthcare. India's #1 uniform choice for Marriott, Taj, Hyatt and more.",
+  alternates: {
+    canonical: 'https://fashionfabric.info/clients',
+  },
+}
 
-// Metdata moved to layout.tsx to resolve Next.js build mismatch.
-
-// BUILD_ID_FORCE_REFRESH_V11: 2026_03_09_12_20
-const clients: { name: string; logo: string }[] = [
+const clients = [
   { name: "Araqila", logo: "/images/clients/araqila.png" },
   { name: "Baale Resort", logo: "/images/clients/baale_new.png" },
   { name: "Big B Casino", logo: "/images/clients/cropped-big-b-casino_new.png" },
@@ -58,56 +60,10 @@ const clients: { name: string; logo: string }[] = [
   { name: "W Goa", logo: "/images/clients/wh-logo_new.png" },
 ]
 
-const testimonials = [
-  {
-    quote: "Fashion Fabric has been our trusted uniform partner for years. Their attention to detail, quality of fabrics, and timely delivery have made them an invaluable asset to our operations.",
-    name: "Hotel Manager",
-    company: "5-Star Hotel in Goa",
-    logo: "/images/testimonials/Untitled-4_Hotel Manager.svg"
-  },
-  {
-    quote: "The team at Fashion Fabric understands our brand aesthetic perfectly. They've created custom uniforms that our staff love to wear and that perfectly represent our brand image.",
-    name: "F&B Director",
-    company: "Luxury Resort in Goa",
-    logo: "/images/testimonials/Untitled-4_F&B Director.svg"
-  },
-  {
-    quote: "We've been working with Fashion Fabric for over 5 years now. Their consistent quality and reliability make them our go-to uniform supplier for all our properties.",
-    name: "Procurement Manager",
-    company: "Hotel Chain",
-    logo: "/images/testimonials/Untitled-4_Procurement Manager.svg"
-  },
-  {
-    quote: "The custom chef coats designed by Fashion Fabric are not only stylish but also incredibly comfortable and durable. Our kitchen team is very satisfied.",
-    name: "Executive Chef",
-    company: "Fine Dining Restaurant",
-    logo: "/images/testimonials/Untitled-4_Executive Chef.svg"
-  },
-  {
-    quote: "Fashion Fabric's attention to detail and commitment to quality is unmatched. They delivered our large order on time and exceeded our expectations.",
-    name: "General Manager",
-    company: "Casino in Goa",
-    logo: "/images/testimonials/Untitled-4_General Manager.svg"
-  },
-  {
-    quote: "Working with Fashion Fabric has been a pleasure. Their team is responsive, professional, and always willing to go the extra mile to meet our requirements.",
-    name: "Operations Director",
-    company: "Boutique Hotel",
-    logo: "/images/testimonials/Untitled-4_Operations Director.svg"
-  },
-]
-
 export default function ClientsPage() {
-  const [index, setIndex] = useState(1)
-  const touchStartX = useRef<number | null>(null)
-  
-  const handlePrev = () => setIndex((curr) => (curr === 0 ? testimonials.length - 1 : curr - 1))
-  const handleNext = () => setIndex((curr) => (curr === testimonials.length - 1 ? 0 : curr + 1))
-
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        {/* Hero Section - Refreshed with New UI Style */}
         <section className="relative w-full h-[50vh] flex items-center justify-center overflow-hidden">
           <Image
             src="/images/bg-imges-hero-sections/image-04.jpg"
@@ -134,7 +90,6 @@ export default function ClientsPage() {
           </div>
         </section>
 
-        {/* Clients Grid Section */}
         <section className="py-24 bg-white relative">
           <div className="container px-4 md:px-6">
             <AnimateIn className="text-center mb-16">
@@ -142,20 +97,11 @@ export default function ClientsPage() {
               <div className="w-20 h-1.5 bg-neutral-200 mx-auto rounded-full"></div>
             </AnimateIn>
             
-            <AnimateInStagger className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8" staggerDelay={0.01}>
-              {clients.map((client: { name: string; logo: string }, index: number) => (
-                <div key={index} className="group rounded-3xl p-6 md:p-10 flex flex-col items-center justify-center h-48 md:h-60 shadow-sm bg-white border border-neutral-100 transition-all duration-500">
-                  <div className="h-28 w-full flex items-center justify-center mb-6">
-                    <Image src={client.logo} alt={client.name} width={160} height={90} className="object-contain max-w-[90%] max-h-full" />
-                  </div>
-                  <p className="text-[10px] md:text-xs font-bold tracking-widest text-neutral-400 text-center w-full uppercase">{client.name}</p>
-                </div>
-              ))}
-            </AnimateInStagger>
+            {/* The Logo Grid is now a separate client component to satisfy Next.js page requirements */}
+            <ClientsGrid clients={clients} />
           </div>
         </section>
 
-        {/* Unified Testimonials Section */}
         <TiltedTestimonials />
       </main>
     </div>
