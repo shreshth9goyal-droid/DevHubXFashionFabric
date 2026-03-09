@@ -24,7 +24,7 @@ const clients = [
   { name: "Birch by Romeo Lane", logo: "/images/home-icons-all/clients-home-logos/Birch.png" },
   { name: "Cadillac Casino", logo: "/images/home-icons-all/clients-home-logos/Cadillac Casino.png" },
   { name: "Caravela Beach Resort", logo: "/images/home-icons-all/clients-home-logos/Caravela.png" },
-  { name: "Casino Gold", logo: "/images/home-icons-all/clients-home-logos/Casino Gold.png" },
+  { name: "Casino Gold", logo: "/images/clients/Puppy-Casino-Gold-Logo_new.png" },
   { name: "Casino Pride", logo: "/images/home-icons-all/clients-home-logos/Casino Pride .png" },
   { name: "Club Mahindra", logo: "/images/home-icons-all/clients-home-logos/Club Mahindra.png" },
   { name: "Country Inn by Marriott", logo: "/images/clients/jw_marriot_new.png" },
