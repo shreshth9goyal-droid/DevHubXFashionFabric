@@ -32,6 +32,7 @@ const clients = [
   { name: "Elements by Rosetta", logo: "/images/home-icons-all/clients-home-logos/Elements.png" },
   { name: "Fairfield by Marriott", logo: "/images/home-icons-all/clients-home-logos/Fairfield.png" },
   { name: "Fortune 7 Casino", logo: "/images/clients/fortune_new.png" },
+  { name: "Fortune by ITC", logo: "/images/home-icons-all/clients-home-logos/Fortune.png" },
   { name: "Grand Hyatt", logo: "/images/home-icons-all/clients-home-logos/Grand Hyatt.png" },
   { name: "Hard Rock Hotel", logo: "/images/home-icons-all/clients-home-logos/Hard Rock.png" },
   { name: "Hilton", logo: "/images/home-icons-all/clients-home-logos/Hilton.png" },
@@ -58,7 +59,6 @@ const clients = [
   { name: "Taj Resort & Convention Centre", logo: "/images/clients/taj_convention_centre.png" },
   { name: "The Astor", logo: "/images/home-icons-all/clients-home-logos/The Astor.png" },
   { name: "The Fern Residency", logo: "/images/home-icons-all/clients-home-logos/The Fern.png" },
-  { name: "Vivanta by Taj", logo: "/images/home-icons-all/clients-home-logos/Vivanta.png" },
   { name: "W Goa", logo: "/images/home-icons-all/clients-home-logos/W Hotels.png" },
 ]
 
