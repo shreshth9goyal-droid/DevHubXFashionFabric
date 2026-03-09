@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-// Build ID: LOCKDOWN_ALPHABETICAL_SORT_V6_2026_03_09_11_25
+// Build ID: LOCKDOWN_ALPHABETICAL_MANUAL_V7_2026_03_09_12_00
 import { Inter, EB_Garamond } from "next/font/google"
 import "./globals.css"
 import Script from "next/script"

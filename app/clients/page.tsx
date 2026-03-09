@@ -59,7 +59,7 @@ const clients = [
   { name: "The Fern Residency", logo: "/images/clients/fern-hotels_new.png" },
   { name: "Vivanta by Taj", logo: "/images/clients/icon-vivanta.png" },
   { name: "W Goa", logo: "/images/clients/wh-logo_new.png" },
-].sort((a, b) => a.name.localeCompare(b.name));
+]
 
 const testimonials = [
   {
