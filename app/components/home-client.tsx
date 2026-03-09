@@ -124,48 +124,16 @@ export function HomeClient({ clients, featuredProducts }: HomeClientProps) {
           </div>
         </section>
 
-        <section className="py-16 bg-neutral-50 border-y border-neutral-100">
-          <div className="container px-4 md:px-6">
-            <AnimateIn>
-              <h2 className="text-3xl font-bold text-[#00712C] pl-6 mb-12 text-center md:text-left">Premium Textiles & Fabrics</h2>
-            </AnimateIn>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <AnimateIn direction="up">
-                <div className="bg-white p-6 rounded-xl border border-neutral-100 shadow-sm h-full flex flex-col">
-                  <h3 className="text-xl font-bold mb-4">The Uniform Shop & More</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                    Searching for a <strong className="text-black font-semibold">uniform shop near me</strong>? At Fashion Fabric Goa, we provide everything from professional hospitality wear to custom <strong className="text-black font-semibold">mens fabric shop</strong> selections.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    <span className="px-3 py-1 bg-neutral-100 rounded-full text-[10px] font-bold text-neutral-600 uppercase tracking-wider">Lycra Fabric</span>
-                    <span className="px-3 py-1 bg-neutral-100 rounded-full text-[10px] font-bold text-neutral-600 uppercase tracking-wider">Cotton Canvas</span>
-                    <span className="px-3 py-1 bg-neutral-100 rounded-full text-[10px] font-bold text-neutral-600 uppercase tracking-wider">Raw Silk</span>
-                  </div>
-                </div>
-              </AnimateIn>
-              <AnimateIn direction="up" delay={0.1}>
-                <div className="bg-white p-6 rounded-xl border border-neutral-100 shadow-sm h-full flex flex-col">
-                  <h3 className="text-xl font-bold mb-4">Wholesale Textiles Goa</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                    As your premier <strong className="text-black font-semibold">fabric store near me</strong>, we offer <strong className="text-black font-semibold">wholesale fabric shop</strong> pricing for bulk orders of school and corporate <strong className="text-black font-semibold">textiles near me</strong>.
-                  </p>
-                  <p className="text-neutral-600 text-xs italic border-t pt-4 mt-auto">Need to know where to buy sewing thread near me? Right here at our Santa Inez textile hub.</p>
-                </div>
-              </AnimateIn>
-              <AnimateIn direction="up" delay={0.2}>
-                <div className="bg-white p-6 rounded-xl border border-neutral-100 shadow-sm h-full flex flex-col">
-                  <h3 className="text-xl font-bold mb-4">Expert Dyeing Services</h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed mb-4">
-                    Our professional <strong className="text-black font-semibold">dye shop near me</strong> services include precision <strong className="text-black font-semibold">cloth colouring</strong> and <strong className="text-black font-semibold">shirt dye</strong> matching.
-                  </p>
-                  <ul className="text-xs text-[#00712C] font-bold space-y-1 mt-auto bg-[#00712C]/5 p-3 rounded-lg">
-                    <li>• Precision Color Matching</li>
-                    <li>• Shirt Dye & Tailoring</li>
-                    <li>• Fade Resistant Fabrics</li>
-                  </ul>
-                </div>
-              </AnimateIn>
-            </div>
+        {/* SEO Keywords Section - Hidden from UI, kept for backend/indexing */}
+        <section className="sr-only" aria-hidden="true">
+          <div className="container">
+            <h2>Premium Textiles & Fabrics</h2>
+            <h3>The Uniform Shop & More</h3>
+            <p>Searching for a uniform shop near me? At Fashion Fabric Goa, we provide everything from professional hospitality wear to custom mens fabric shop selections. Lycra Fabric, Cotton Canvas, Raw Silk.</p>
+            <h3>Wholesale Textiles Goa</h3>
+            <p>As your premier fabric store near me, we offer wholesale fabric shop pricing for bulk orders of school and corporate textiles near me. Need to know where to buy sewing thread near me? Right here at our Santa Inez textile hub.</p>
+            <h3>Expert Dyeing Services</h3>
+            <p>Our professional dye shop near me services include precision cloth colouring and shirt dye matching. Precision Color Matching, Shirt Dye & Tailoring, Fade Resistant Fabrics.</p>
           </div>
         </section>
 
