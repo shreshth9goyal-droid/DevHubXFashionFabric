@@ -151,7 +151,9 @@ section {
 .marquee-track-v4 {
   display: flex !important;
   flex-direction: row !important;
-  animation: marquee-v4 linear infinite !important;
+  animation-name: marquee-v4 !important;
+  animation-timing-function: linear !important;
+  animation-iteration-count: infinite !important;
   animation-play-state: running !important;
 }
 
