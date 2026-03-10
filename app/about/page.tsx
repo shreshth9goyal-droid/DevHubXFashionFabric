@@ -101,13 +101,13 @@ export default function AboutPage() {
             Our Story
           </h2>
           <p className="mb-4 text-black text-justify text-sm md:text-base">
-            Fashion Fabric began its journey in 2010, not as a uniform manufacturer, but as a luxury textile showroom built on a deep understanding of textiles. Our strength has always been fabric-first quality, feel, finish and durability; because we believe every great garment starts with the right material.
+            Fashion Fabric began its journey in 2010 with a singular vision: to bring high-end tailoring standards to the world of professional uniforms. Our foundation is built on a deep technical understanding of garment construction, finishing, and durability; because we believe every great uniform is defined by its resilience and style.
           </p>
           <p className="mb-4 text-black text-justify text-sm md:text-base">
-            Our entry into uniforms happened through a sheer request from a spa that needed professional uniforms. We weren&apos;t specialised in uniforms at the time, and we didn&apos;t have the full infrastructure either, but we said yes. We sourced the fabric, got customisation done in another city, and managed multiple rounds of follow-ups just to deliver the perfect final product. When we saw the client&apos;s smile at delivery, we knew we had created something beyond a garment, we had created trust.
+            Our specialized focus on uniforms grew from a passion for outfitting teams that demand perfection. We quickly realized that there was a genuine need for workwear that looked premium, felt comfortable, and represented a brand with pride. That's how we evolved into India's leading bespoke uniform solution brand.
           </p>
           <p className="mb-4 text-black text-justify text-sm md:text-base">
-            That one order became a turning point. More requests followed, and we realised there was a genuine need for uniforms that looked premium, felt comfortable, and represented the brand with pride. That&apos;s when Fashion Fabric evolved from a showroom into a full-scale uniform solution brand. Since then, Fashion Fabric has grown into a brand trusted by leading names across industries, especially hospitality and service-driven businesses; building processes, strengthening production capability, and taking ownership of design, tailoring, branding and finishing. What began as a request became our purpose and uniforms became our core.
+            By building lean processes, strengthening our in-house production capability, and taking complete ownership of design, tailoring, and branding, we ensured that every client received more than just attire—they received trust. Uniforms became our core purpose.
           </p>
           <p className="mb-4 text-black text-justify text-sm md:text-base">
             Today, Fashion Fabric outfits over 100,000 crew members every year, redefining what uniforms mean to the modern workforce. Uniforms are no longer just attire, they carry your team&apos;s confidence and your brand&apos;s first impression. With over 15 years of expertise, we deliver uniforms crafted with precision, quality control and elegance; where comfort and style are stitched into every detail.

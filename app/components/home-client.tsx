@@ -124,16 +124,14 @@ export function HomeClient({ clients, featuredProducts }: HomeClientProps) {
           </div>
         </section>
 
-        {/* SEO Keywords Section - Hidden from UI, kept for backend/indexing */}
+        {/* Industry Focus Section */}
         <section className="sr-only" aria-hidden="true">
           <div className="container">
-            <h2>Premium Textiles & Fabrics</h2>
-            <h3>The Uniform Shop & More</h3>
-            <p>Searching for a uniform shop near me? At Fashion Fabric Goa, we provide everything from professional hospitality wear to custom mens fabric shop selections. Lycra Fabric, Cotton Canvas, Raw Silk.</p>
-            <h3>Wholesale Textiles Goa</h3>
-            <p>As your premier fabric store near me, we offer wholesale fabric shop pricing for bulk orders of school and corporate textiles near me. Need to know where to buy sewing thread near me? Right here at our Santa Inez textile hub.</p>
-            <h3>Expert Dyeing Services</h3>
-            <p>Our professional dye shop near me services include precision cloth colouring and shirt dye matching. Precision Color Matching, Shirt Dye & Tailoring, Fade Resistant Fabrics.</p>
+            <h2>Bespoke Uniform Manufacturing</h2>
+            <h3>Expert Workwear Solutions</h3>
+            <p>At Fashion Fabric Goa, we provide everything from professional hospitality wear to custom corporate uniforms. Specializing in high-performance garments for the modern workforce.</p>
+            <h3>Wholesale Uniform Supply</h3>
+            <p>As India's premier uniform manufacturer, we offer scalable production for large-scale orders of school and corporate wear. Delivering precision-tailored apparel from our Panaji, Goa hub.</p>
           </div>
         </section>
 

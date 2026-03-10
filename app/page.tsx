@@ -168,8 +168,8 @@ export default function Home() {
       "https://www.linkedin.com/company/fashionfabric/"
     ],
     "priceRange": "$$",
-    "description": "Fashion Fabric Goa is a premier uniform shop and textile store specializing in high-quality Lycra, Cotton Canvas, Raw Silk, and wholesale fabrics. Offering professional fabric dyeing, custom textiles, and bespoke uniforms for hotels and corporate sectors near me in Panaji, Goa.",
-    "keywords": "fashion fabric, uniform shop near me, fabric store Goa, lycra fabric, cotton canvas, wholesale textiles India, dye shop Goa, mens fabric shop"
+    "description": "Fashion Fabric Goa is a premier uniform manufacturer specializing in bespoke apparel for the hospitality and corporate sectors. Leading supplier of professional uniforms in Panaji, Goa.",
+    "keywords": "fashion fabric, uniform manufacturer India, bespoke uniforms, hotel uniforms Goa, corporate wear India, professional workwear"
   }
 
   const faqSchema = {
@@ -178,18 +178,18 @@ export default function Home() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Where can I find a premium fabric shop and uniform store in Goa?",
+        "name": "Where can I find a premium uniform manufacturer in Goa?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Fashion Fabric in Panaji, Goa, is the premier choice for anyone searching for a high-quality fabric store or uniform shop near me. We offer a wide range of materials including Raw Silk, Lycra, and Cotton Canvas."
+          "text": "Fashion Fabric in Panaji, Goa, is the premier choice for bespoke uniforms, serving luxury hospitality and corporate clients."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you provide wholesale textiles and professional fabric dyeing services?",
+        "name": "Do you provide professional uniform manufacturing?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Fashion Fabric is a leading wholesale fabric supplier in India. We also offer professional cloth colouring and dye shop services for hospitality and corporate uniforms."
+          "text": "Yes, Fashion Fabric is a leading uniform manufacturer in India. We offer professional tailoring and branding services for hospitality and corporate uniforms."
         }
       },
       {
