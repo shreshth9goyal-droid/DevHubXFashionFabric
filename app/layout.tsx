@@ -35,9 +35,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://fashionfabric.info'),
-  title: "Fashion Fabric | India's #1 Uniform Manufacturer & Premium Fabric Producer",
-  description: "India's leading bespoke uniform manufacturer and premium fabric producer since 2010. Specialist in Silk, Linen, and high-quality textiles for luxury hotels, airlines, and corporate teams. #1 choice for custom uniforms.",
-  keywords: "uniform manufacturer India, silk fabric producer, linen manufacturer, hospitality uniforms Goa, hotel uniforms Goa, corporate wear India, school uniform manufacturer, bespoke tailoring",
+  title: "Fashion Fabric | India's #1 Uniform Manufacturer",
+  description: "India's leading bespoke uniform manufacturer since 2010. Specialist in premium uniforms for luxury hotels, airlines, and corporate teams. #1 choice for custom uniforms.",
+  keywords: "uniform manufacturer India, hospitality uniforms Goa, hotel uniforms Goa, corporate wear India, school uniform manufacturer, bespoke tailoring",
   authors: [{ name: "Deepak Goyal" }],
   creator: "Fashion Fabric",
   publisher: "Fashion Fabric",
@@ -79,8 +79,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://fashionfabric.info/",
     siteName: "Fashion Fabric",
-    title: "Fashion Fabric | India's #1 Uniform Manufacturer & Premium Fabric Producer",
-    description: "India's leading bespoke uniform manufacturer and premium fabric producer since 2010. Specialist in Silk, Linen, and high-quality textiles for luxury hotels, airlines, and corporate teams.",
+    title: "Fashion Fabric | India's #1 Uniform Manufacturer",
+    description: "India's leading bespoke uniform manufacturer since 2010. Specialist in premium uniforms for luxury hotels, airlines, and corporate teams.",
     images: [
       {
         url: "https://fashionfabric.info/images/bg-imges-hero-sections/image-02.jpg",
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fashion Fabric | India's #1 Uniform Manufacturer",
-    description: "Expert Silk & Linen Uniforms for Luxury Hospitality & Corporate. #1 choice for custom uniforms.",
+    description: "Expert bespoke uniforms for Luxury Hospitality & Corporate. #1 choice for custom uniforms.",
     images: ["https://fashionfabric.info/images/bg-imges-hero-sections/image-02.jpg"],
   },
 }
