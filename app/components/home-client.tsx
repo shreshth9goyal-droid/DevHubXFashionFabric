@@ -30,7 +30,7 @@ export function HomeClient({ clients, featuredProducts }: HomeClientProps) {
             muted
             playsInline
             preload="metadata"
-            poster="/images/hero-poster.jpg"
+            poster="/images/bg-imges-hero-sections/image-04.jpg"
             className="absolute inset-0 w-full h-full object-cover z-0"
           >
             <source src="/video/V5.webm" type="video/webm" />
@@ -94,7 +94,7 @@ export function HomeClient({ clients, featuredProducts }: HomeClientProps) {
             <AnimateInStagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-neutral-50 p-8 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-md">
                 <div className="w-64 h-64 flex items-center justify-center mx-auto mb-6">
-                  <Image src="/images/home-icons-all/home-icons/Cost-Effective.webp" alt="Cost-effective uniform solutions India" width={240} height={240} loading="lazy" className="object-contain" />
+                  <Image src="/images/home-icons-all/home-icons/Cost-Effective.webp" alt="Cost-effective uniform solutions India" width={160} height={160} loading="lazy" className="object-contain" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3 text-[#00712C]">Cost-Effective</h3>
                 <p className="text-neutral-600 font-medium">Quality uniforms at competitive prices for all budgets</p>
@@ -197,7 +197,7 @@ export function HomeClient({ clients, featuredProducts }: HomeClientProps) {
             <AnimateIn>
               <h2 className="text-3xl font-bold text-[#00712C] mb-12 pl-6">Trusted By Leading Hospitality Brands</h2>
             </AnimateIn>
-            <InfiniteLogoScroll clients={clients} speed={30} logoSize={180} />
+            <InfiniteLogoScroll clients={clients} speed={60} logoSize={180} />
             <AnimateIn delay={0.5}>
               <div className="text-center mt-8">
                 <Link href="/clients" className="text-[#00712C] font-medium hover:underline">

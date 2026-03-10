@@ -45,6 +45,11 @@ const nextConfig = {
         destination: 'https://fashionfabric.info/:path*',
         permanent: true,
       },
+      {
+        source: '/collection',
+        destination: '/collection/hospitality',
+        permanent: true,
+      },
     ]
   },
   // Basic security headers

@@ -50,7 +50,7 @@ export default function Header() {
             onMouseEnter={() => setIsCollectionOpen(true)}
             onMouseLeave={() => setIsCollectionOpen(false)}
           >
-            <Link href="/#" className="text-sm font-medium hover:text-[#00712C] transition-colors text-black flex items-center gap-1">
+            <Link href="/collection/hospitality" className="text-sm font-medium hover:text-[#00712C] transition-colors text-black flex items-center gap-1">
               Collection
               <ChevronDown className={`h-4 w-4 transition-transform ${isCollectionOpen ? 'rotate-180' : ''}`} />
             </Link>

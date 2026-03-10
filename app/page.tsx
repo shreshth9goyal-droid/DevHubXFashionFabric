@@ -3,8 +3,8 @@ import { Metadata } from "next"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Fashion Fabric Goa | #1 Custom Uniform Manufacturer & Fabric Store India",
-  description: "Fashion Fabric Goa: Your ultimate uniform shop and premium fabric store near me. Specialists in Lycra, Cotton Canvas, Raw Silk, and wholesale textiles for luxury hotels and corporate wear in Panaji, Goa.",
+  title: "Fashion Fabric | India's #1 Uniform Manufacturer & Premium Fabric Producer",
+  description: "Fashion Fabric: India's leading bespoke uniform manufacturer and premium fabric producer since 2010. Specialist in Silk, Linen, and high-quality textiles for luxury hotels, airlines, and corporate teams.",
   alternates: {
     canonical: 'https://fashionfabric.info',
   },
@@ -26,13 +26,12 @@ const clients = [
   { name: "Caravela Beach Resort", logo: "/images/home-icons-all/clients-home-logos/Caravela.png" },
   { name: "Casino Pride", logo: "/images/home-icons-all/clients-home-logos/Casino Pride .png" },
   { name: "Club Mahindra", logo: "/images/home-icons-all/clients-home-logos/Club Mahindra.png" },
-  { name: "Country Inn by Marriott", logo: "/images/clients/jw_marriot_new.png" },
+  { name: "Country Inn by Marriott", logo: "/images/clients/country-inn-marriott_new.png" },
   { name: "Deltin Group", logo: "/images/home-icons-all/clients-home-logos/deltin.png" },
   { name: "Double Tree by Hilton", logo: "/images/home-icons-all/clients-home-logos/Double Tree.png" },
   { name: "Elements by Rosetta", logo: "/images/home-icons-all/clients-home-logos/Elements.png" },
   { name: "Fairfield by Marriott", logo: "/images/home-icons-all/clients-home-logos/Fairfield.png" },
-  { name: "Fortune 7 Casino", logo: "/images/clients/fortune_new.png" },
-  { name: "Fortune by ITC", logo: "/images/home-icons-all/clients-home-logos/Fortune.png" },
+  { name: "Fortune 7 Casino", logo: "/images/clients/fortune-7-casino-new.png" },
   { name: "Grand Hyatt", logo: "/images/home-icons-all/clients-home-logos/Grand Hyatt.png" },
   { name: "Hard Rock Hotel", logo: "/images/home-icons-all/clients-home-logos/Hard Rock.png" },
   { name: "Hilton", logo: "/images/home-icons-all/clients-home-logos/Hilton.png" },

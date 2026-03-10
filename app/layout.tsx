@@ -35,9 +35,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://fashionfabric.info'),
-  title: "Fashion Fabric | #1 Best Custom Uniform Manufacturer in India",
-  description: "India's leading bespoke uniform manufacturer since 2010. Specialist supplier for luxury hotels, airlines, healthcare, and corporate teams across India. Premium quality and reliable delivery.",
-  keywords: "uniform manufacturer India, hospitality uniforms Goa, hotel uniforms Goa, corporate wear India, school uniform manufacturer, security uniform supplier, hospital scrubs India, bespoke tailoring",
+  title: "Fashion Fabric | India's #1 Uniform Manufacturer & Premium Fabric Producer",
+  description: "India's leading bespoke uniform manufacturer and premium fabric producer since 2010. Specialist in Silk, Linen, and high-quality textiles for luxury hotels, airlines, and corporate teams. #1 choice for custom uniforms.",
+  keywords: "uniform manufacturer India, silk fabric producer, linen manufacturer, hospitality uniforms Goa, hotel uniforms Goa, corporate wear India, school uniform manufacturer, bespoke tailoring",
   authors: [{ name: "Deepak Goyal" }],
   creator: "Fashion Fabric",
   publisher: "Fashion Fabric",
@@ -79,8 +79,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://fashionfabric.info/",
     siteName: "Fashion Fabric",
-    title: "Fashion Fabric | India's #1 Custom Uniform Manufacturer",
-    description: "India's leading bespoke uniform manufacturer specializing in custom uniforms for hospitality, hotels, corporate, and healthcare sectors since 2010.",
+    title: "Fashion Fabric | India's #1 Uniform Manufacturer & Premium Fabric Producer",
+    description: "India's leading bespoke uniform manufacturer and premium fabric producer since 2010. Specialist in Silk, Linen, and high-quality textiles for luxury hotels, airlines, and corporate teams.",
     images: [
       {
         url: "https://fashionfabric.info/images/bg-imges-hero-sections/image-02.jpg",
@@ -92,8 +92,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fashion Fabric | #1 Custom Uniform Manufacturer India",
-    description: "Premium bespoke uniform manufacturing for luxury hospitality and corporate sectors in India since 2010.",
+    title: "Fashion Fabric | India's #1 Uniform Manufacturer",
+    description: "Expert Silk & Linen Uniforms for Luxury Hospitality & Corporate. #1 choice for custom uniforms.",
     images: ["https://fashionfabric.info/images/bg-imges-hero-sections/image-02.jpg"],
   },
 }
@@ -121,7 +121,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
         {/* Preload critical hero video poster if exists */}
-        <link rel="preload" as="image" href="/images/hero-poster.jpg" />
+        <link rel="preload" as="image" href="/images/bg-imges-hero-sections/image-04.jpg" />
         
       </head>
       <body className={inter.className}>
