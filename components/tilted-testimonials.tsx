@@ -76,15 +76,17 @@ export function TiltedTestimonials() {
                 ))}
               </div>
 
-              {/* Logo - Signature Illustration enhanced for visibility */}
-              <div className="relative hidden md:block w-full h-52 opacity-100 mb-2">
-                <Image 
-                  src="/images/testimonials/Untitled-4_F&B Director.svg" 
-                  alt="Signature Logo" 
-                  fill 
-                  className="object-contain object-bottom filter drop-shadow-[0_0_0.5px_rgba(255,255,255,1)] drop-shadow-[0_0_0.5px_rgba(255,255,255,1)] brightness-[1.5]" 
-                  priority 
-                />
+              {/* Signature Illustration - Enhanced for maximum visibility */}
+              <div className="relative w-full h-24 opacity-100 mt-6 mb-4 flex items-center justify-center overflow-visible">
+                <div className="relative w-64 h-full scale-[2.5] md:scale-[3]">
+                  <Image 
+                    src="/images/testimonials/Untitled-4_F&B Director.svg" 
+                    alt="Signature Logo" 
+                    fill 
+                    className="object-contain filter drop-shadow-[0_0_1.2px_rgba(255,255,255,1)] drop-shadow-[0_0_1.2px_rgba(255,255,255,1)] brightness-[2]" 
+                    priority 
+                  />
+                </div>
               </div>
             </div>
 
