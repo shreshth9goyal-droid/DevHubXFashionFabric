@@ -34,11 +34,14 @@ export async function POST(request: NextRequest) {
     const apiKey = process.env.BREVO_API_KEY
     if (!apiKey) {
       console.warn("BREVO_API_KEY is missing. Sending mock OTP.")
+      if (process.env.NODE_ENV === 'production') {
+        return NextResponse.json({ error: "Email service is not configured (Missing API Key)." }, { status: 500 })
+      }
       return NextResponse.json({
         success: true,
         message: "OTP sent successfully (MOCKED)",
         email: emailNormalized,
-        ...(process.env.NODE_ENV === 'development' && { otp })
+        otp // Included in dev payload so you can see it in network tab
       })
     }
 
@@ -87,7 +90,7 @@ export async function POST(request: NextRequest) {
     if (!response.ok) {
       const result = await response.json()
       console.error('Brevo API Error:', result)
-      return NextResponse.json({ error: "Failed to send OTP email" }, { status: 500 })
+      return NextResponse.json({ error: result.message || "Failed to send OTP email via Brevo" }, { status: 500 })
     }
 
     return NextResponse.json({
