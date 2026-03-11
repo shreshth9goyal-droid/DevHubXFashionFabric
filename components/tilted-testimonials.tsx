@@ -76,9 +76,15 @@ export function TiltedTestimonials() {
                 ))}
               </div>
 
-              {/* Logo - Hidden on mobile for cleaner view */}
-              <div className="relative hidden md:block w-full h-52 opacity-100 mb-2 brightness-0 invert">
-                <Image src="/images/testimonials/Untitled-4_F&B Director.svg" alt="Signature Logo" fill className="object-contain object-bottom" priority />
+              {/* Logo - Signature Illustration enhanced for visibility */}
+              <div className="relative hidden md:block w-full h-52 opacity-100 mb-2">
+                <Image 
+                  src="/images/testimonials/Untitled-4_F&B Director.svg" 
+                  alt="Signature Logo" 
+                  fill 
+                  className="object-contain object-bottom filter drop-shadow-[0_0_0.5px_rgba(255,255,255,1)] drop-shadow-[0_0_0.5px_rgba(255,255,255,1)] brightness-[1.5]" 
+                  priority 
+                />
               </div>
             </div>
 
