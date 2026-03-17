@@ -32,7 +32,7 @@ export default function CataloguePage() {
   const fetchCatalogues = async () => {
     try {
       setIsLoading(true)
-      const response = await fetch("/api/catalogue")
+      const response = await fetch(`/api/catalogue?t=${Date.now()}`)
 
       if (!response.ok) {
         throw new Error("Failed to fetch catalogues")
@@ -111,12 +111,10 @@ export default function CataloguePage() {
                     <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                       {/* Cover Image */}
                       <div className="relative w-full aspect-[3/4] overflow-hidden bg-neutral-100">
-                        <Image
+                        <img
                           src={catalogue.coverImage}
                           alt={catalogue.title}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         {/* Category Badge */}
                         <div className="absolute top-3 left-3 bg-[#00712C] text-white text-xs font-semibold px-3 py-1 rounded-full">
