@@ -96,7 +96,7 @@ export default function AdminCatalogueUploadPage() {
   // Fetch catalogues
   const fetchCatalogues = async () => {
     try {
-      const response = await fetch("/api/catalogue/downloads")
+      const response = await fetch(`/api/catalogue/downloads?t=${Date.now()}`)
       if (response.ok) {
         const data = await response.json()
         setCatalogues(data.catalogues)
@@ -109,7 +109,7 @@ export default function AdminCatalogueUploadPage() {
 
   const fetchCatalogueDownloads = async (catalogueId: string) => {
     try {
-      const response = await fetch(`/api/catalogue/${catalogueId}/downloads`)
+      const response = await fetch(`/api/catalogue/${catalogueId}/downloads?t=${Date.now()}`)
       if (response.ok) {
         const data = await response.json()
         setDownloads(data.downloads)
