@@ -103,7 +103,8 @@ export function ImageSlideshow({ images, autoPlayInterval = 8000, imageClassName
               alt={images[currentIndex].alt}
               fill
               className={`object-contain object-center p-2 sm:p-4 ${imageClassName || ""}`}
-              priority={currentIndex === 0}
+              priority={true}
+              unoptimized={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
             />
           </motion.div>
