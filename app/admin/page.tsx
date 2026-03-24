@@ -23,7 +23,7 @@ export default function AdminPage() {
 
   useEffect(() => {
     if (status === "unauthenticated") {
-      router.push("/admin/portal")
+      router.push("/portal")
     } else if (status === "authenticated") {
       fetchStats()
     }
