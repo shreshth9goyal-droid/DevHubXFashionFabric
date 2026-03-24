@@ -114,3 +114,9 @@ model Enquiry {
   message   String   @db.Text
   createdAt DateTime @default(now())
 }
+model BannedIP {
+  id        String   @id @default(cuid())
+  ip        String   @unique
+  reason    String
+  createdAt DateTime @default(now())
+}
