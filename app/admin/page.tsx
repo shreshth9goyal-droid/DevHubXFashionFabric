@@ -23,7 +23,7 @@ export default function AdminPage() {
 
   useEffect(() => {
     if (status === "unauthenticated") {
-      router.push("/admin/system-exclusive-login-gate")
+      router.push("/admin/portal")
     } else if (status === "authenticated") {
       fetchStats()
     }

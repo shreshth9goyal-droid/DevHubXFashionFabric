@@ -2,8 +2,8 @@ import { withAuth } from "next-auth/middleware"
 import { NextResponse } from "next/server"
 
 // --- INSANE SECURITY: CONFIGURATION ---
-const SECRET_GATE_PATH = "/admin/system-exclusive-login-gate";
-const ACCESS_TOKEN = "FF-ADMIN-2026-SECURE-V1"; // This must be in the URL
+const SECRET_GATE_PATH = "/admin/portal";
+const ACCESS_TOKEN = "FF-ADMIN-2026-SECURE-V1";
 const HONEYPOT_PATHS = ["/admin/login", "/wp-admin", "/admin/config", "/phpmyadmin"];
 
 export default withAuth(
