@@ -86,7 +86,7 @@ export default function AdminCatalogueUploadPage() {
   // Redirect if not authenticated or not admin
   useEffect(() => {
     if (status === "unauthenticated") {
-      router.push("/admin/login")
+      router.push("/admin/system-exclusive-login-gate")
     } else if (status === "authenticated" && (session?.user as any)?.role !== "admin") {
       toast.error("Unauthorized - Admin access required")
       router.push("/")

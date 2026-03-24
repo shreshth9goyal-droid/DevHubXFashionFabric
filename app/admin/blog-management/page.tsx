@@ -57,7 +57,7 @@ export default function BlogManagementPage() {
 
   useEffect(() => {
     if (status === "unauthenticated") {
-      router.push("/admin/login")
+      router.push("/admin/system-exclusive-login-gate")
     } else if (status === "authenticated") {
       fetchBlogPosts()
     }

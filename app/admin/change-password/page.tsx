@@ -23,7 +23,7 @@ export default function ChangePasswordPage() {
 
   // Redirect if not authenticated
   if (status === "unauthenticated") {
-    router.push("/admin/login")
+    router.push("/admin/system-exclusive-login-gate")
     return null
   }
 

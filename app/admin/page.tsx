@@ -23,7 +23,7 @@ export default function AdminPage() {
 
   useEffect(() => {
     if (status === "unauthenticated") {
-      router.push("/admin/login")
+      router.push("/admin/system-exclusive-login-gate")
     } else if (status === "authenticated") {
       fetchStats()
     }
@@ -79,7 +79,7 @@ export default function AdminPage() {
           <Button 
             variant="destructive" 
             className="gap-2 flex-1 sm:flex-none bg-red-600 hover:bg-red-700"
-            onClick={() => signOut({ callbackUrl: "/admin/login" })}
+            onClick={() => signOut({ callbackUrl: "/admin/system-exclusive-login-gate" })}
           >
             <LogOut className="h-4 w-4" />
             Logout
